@@ -574,6 +574,7 @@ h1, h2, h3, h4, h5, h6, .logo {
 
 .product-card {
     text-align: center;
+    min-width: 0;
 }
 
 .product-image-wrapper {
@@ -643,10 +644,11 @@ h1, h2, h3, h4, h5, h6, .logo {
     width: 100%;
     background-color: rgba(255,255,255,0.95);
     color: var(--color-text);
-    padding: 12px;
-    font-size: 0.875rem;
+    padding: 10px 4px;
+    font-size: 0.75rem;
     font-weight: 500;
     border-radius: 4px;
+    white-space: normal;
     transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
@@ -674,9 +676,13 @@ h1, h2, h3, h4, h5, h6, .logo {
     font-weight: 400;
     color: var(--color-text);
     margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.3;
 }
 
 .product-name a {
