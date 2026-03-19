@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,13 @@
             <div class="container">
                 <ul class="nav-list">
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="brincos.html">Brincos & Cartelas</a></li>
+                    <li class="dropdown-container">
+                        <a href="brincos.html">Brincos <i data-lucide="chevron-down" style="width:14px;height:14px;vertical-align:middle;margin-left:2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="brincos-unitarios.html">Unitários</a></li>
+                            <li><a href="brincos-cartelas.html">Cartelas</a></li>
+                        </ul>
+                    </li>
                     <li><a href="pulseiras.html" class="highlight-link">Pulseiras</a></li>
                     <li><a href="colares.html">Colares</a></li>
                     <li><a href="tornozeleiras.html">Tornozeleiras</a></li>
@@ -66,7 +72,7 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=400" alt="Pulseira Riviera" class="product-image default-img">
+                        <img src="./assets/images/produtos/pulseiras.jpg" alt="Pulseira Riviera" class="product-image default-img">
                         <div class="product-actions">
                             <button class="add-to-cart-btn">Adicionar à Sacola</button>
                         </div>
@@ -79,7 +85,7 @@
                 <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1573408301145-b98c46234d60?auto=format&fit=crop&q=80&w=400" alt="Pulseira Elo Português" class="product-image default-img">
+                        <img src="./assets/images/produtos/pulseiras.jpg" alt="Pulseira Elo Português" class="product-image default-img">
                         <div class="product-actions">
                             <button class="add-to-cart-btn">Adicionar à Sacola</button>
                         </div>
@@ -92,7 +98,7 @@
                 <!-- Product 3 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1599643477874-5c866f59eb83?auto=format&fit=crop&q=80&w=400" alt="Pulseira Bolinhas" class="product-image default-img">
+                        <img src="./assets/images/produtos/pulseiras.jpg" alt="Pulseira Bolinhas" class="product-image default-img">
                         <div class="product-actions">
                             <button class="add-to-cart-btn">Adicionar à Sacola</button>
                         </div>
@@ -105,7 +111,7 @@
                 <!-- Product 4 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=400" alt="Pulseira Fita" class="product-image default-img">
+                        <img src="./assets/images/produtos/pulseiras.jpg" alt="Pulseira Fita" class="product-image default-img">
                         <div class="product-actions">
                             <button class="add-to-cart-btn">Adicionar à Sacola</button>
                         </div>
@@ -130,3 +136,4 @@
     <script>lucide.createIcons();</script>
 </body>
 </html>
+

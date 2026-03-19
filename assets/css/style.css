@@ -1,4 +1,4 @@
-/* =========================================
+﻿/* =========================================
    KN Beauty - Premium E-commerce Styles
 ========================================= */
 
@@ -308,6 +308,48 @@ h1, h2, h3, h4, h5, h6, .logo {
     color: var(--color-sale);
 }
 
+/* Dropdown Desktop */
+.dropdown-container {
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-md);
+    min-width: 160px;
+    z-index: 100;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+.dropdown-container:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.2s ease forwards;
+}
+.dropdown-menu li {
+    border-bottom: 1px solid var(--color-border);
+}
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    text-transform: none;
+}
+.dropdown-menu a:hover {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+}
+.dropdown-menu a::after {
+    display: none;
+}
+
 /* Mobile Nav Overlay */
 .mobile-nav-overlay {
     position: fixed;
@@ -383,9 +425,24 @@ h1, h2, h3, h4, h5, h6, .logo {
     font-weight: 500;
 }
 
+/* Dropdown Mobile */
+.mobile-dropdown-menu {
+    display: none;
+    background-color: var(--color-surface);
+    padding-left: 20px;
+}
+.mobile-dropdown-menu.active {
+    display: block;
+}
+.mobile-dropdown-menu a {
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1920');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('../images/produtos/colares.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -946,3 +1003,4 @@ h1, h2, h3, h4, h5, h6, .logo {
         justify-content: space-between;
     }
 }
+

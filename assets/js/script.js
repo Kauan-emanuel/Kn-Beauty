@@ -35,6 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Dropdown Toggle
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+    mobileDropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const menu = toggle.nextElementSibling;
+            menu.classList.toggle('active');
+            
+            const icon = toggle.querySelector('i');
+            if(menu.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'chevron-up');
+            } else {
+                icon.setAttribute('data-lucide', 'chevron-down');
+            }
+            lucide.createIcons();
+        });
+    });
+
     // Basic Cart Functionality Simulation
     const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
     const cartCountElement = document.querySelector('.cart-count');
