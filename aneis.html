@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anéis de Prata 925 | Kn Beauty</title>
+    <!-- Fonts and styles same as index -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .category-header {
+            background-color: var(--color-surface);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .category-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .breadcrumb {
+            font-size: 0.875rem;
+            color: var(--color-text-light);
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <button class="mobile-menu-btn" aria-label="Menu"><i data-lucide="menu"></i></button>
+            <a href="index.html" class="logo">Kn Beauty.</a>
+            <div class="search-bar hidden-mobile">
+                <input type="text" placeholder="O que você procura?">
+                <button type="submit" aria-label="Buscar"><i data-lucide="search"></i></button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-btn cart-btn" aria-label="Carrinho">
+                    <i data-lucide="shopping-bag"></i><span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav hidden-mobile">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="aneis.html" class="highlight-link">Anéis</a></li>
+                    <li><a href="colares.html">Colares</a></li>
+                    <li><a href="brincos.html">Brincos</a></li>
+                    <li><a href="pulseiras.html">Pulseiras</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <div class="container">
+                <h1>Anéis em Prata 925</h1>
+                <p class="breadcrumb"><a href="index.html">Início</a> / Anéis</p>
+            </div>
+        </section>
+
+        <section class="products container section-padding">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f6612d334?auto=format&fit=crop&q=80&w=400" alt="Anel Solitário" class="product-image default-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="#">Anel Solitário Zircônia</a></h3>
+                        <div class="product-price"><span class="current-price">R$ 127,40</span></div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1629224316810-9d8805b95e76?auto=format&fit=crop&q=80&w=400" alt="Anel Falange" class="product-image default-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="#">Anel de Falange Liso</a></h3>
+                        <div class="product-price"><span class="current-price">R$ 49,90</span></div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599643478514-4a1ab6c429bf?auto=format&fit=crop&q=80&w=400" alt="Anel Aparador" class="product-image default-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="#">Anel Aparador Cravejado</a></h3>
+                        <div class="product-price"><span class="current-price">R$ 89,00</span></div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&q=80&w=400" alt="Anel Aro Duplo" class="product-image default-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="#">Anel Aro Duplo Cruzado</a></h3>
+                        <div class="product-price"><span class="current-price">R$ 110,00</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container container-flex">
+                <p>&copy; 2026 Kn Beauty Joias em Prata.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
