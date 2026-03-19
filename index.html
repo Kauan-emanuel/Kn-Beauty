@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kn Beauty | Sua Beleza em Destaque</title>
+    <meta name="description" content="Descubra as melhores maquiagens e produtos de skincare na Kn Beauty. Realce sua beleza com nossos produtos premium.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <p>Frete grátis nas compras acima de R$ 199 <span>•</span> Parcelamento em até 6x sem juros</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <a href="#" class="logo">
+                Kn Beauty.
+            </a>
+
+            <div class="search-bar hidden-mobile">
+                <input type="text" placeholder="O que você procura?">
+                <button type="submit" aria-label="Buscar"><i data-lucide="search"></i></button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="action-btn hidden-mobile" aria-label="Minha Conta">
+                    <i data-lucide="user"></i>
+                </a>
+                <a href="#" class="action-btn" aria-label="Favoritos">
+                    <i data-lucide="heart"></i>
+                </a>
+                <a href="#" class="action-btn cart-btn" aria-label="Carrinho">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="main-nav hidden-mobile">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Maquiagem</a></li>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Pincéis & Acessórios</a></li>
+                    <li><a href="#" class="highlight-link">Kits Especiais</a></li>
+                    <li><a href="#" class="sale-link">Promoções</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Overlay (Hidden by default) -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-content">
+            <button class="close-menu-btn" aria-label="Fechar menu"><i data-lucide="x"></i></button>
+            <div class="mobile-search">
+                <input type="text" placeholder="O que você procura?">
+                <button><i data-lucide="search"></i></button>
+            </div>
+            <ul class="mobile-menu-list">
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Maquiagem</a></li>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Pincéis & Acessórios</a></li>
+                <li><a href="#">Kits Especiais</a></li>
+                <li><a class="sale-link" href="#">Promoções</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <span class="hero-subtitle">Nova Coleção</span>
+                <h1 class="hero-title">Realce sua essência natural</h1>
+                <p class="hero-text">Descubra os novos produtos essenciais para a sua rotina de beleza com ativos exclusivos.</p>
+                <a href="#" class="btn btn-primary">Comprar Agora</a>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits">
+            <div class="container benefits-grid">
+                <div class="benefit-item">
+                    <i data-lucide="truck"></i>
+                    <div>
+                        <h3>Entrega Rápida</h3>
+                        <p>Para todo o Brasil</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="credit-card"></i>
+                    <div>
+                        <h3>Até 6x sem juros</h3>
+                        <p>No cartão de crédito</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="shield-check"></i>
+                    <div>
+                        <h3>Compra Segura</h3>
+                        <p>Ambiente 100% seguro</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="award"></i>
+                    <div>
+                        <h3>Qualidade Premium</h3>
+                        <p>Produtos selecionados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories / Destaques -->
+        <section class="categories container section-padding">
+            <h2 class="section-title">Compre por Categoria</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=400" alt="Maquiagem">
+                    <div class="category-overlay">
+                        <h3>Maquiagem</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?auto=format&fit=crop&q=80&w=400" alt="Skincare">
+                    <div class="category-overlay">
+                        <h3>Skincare</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1615397323214-411a0da895a6?auto=format&fit=crop&q=80&w=400" alt="Acessórios">
+                    <div class="category-overlay">
+                        <h3>Acessórios</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="products container section-padding">
+            <h2 class="section-title">Mais Vendidos</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">-15%</span>
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=400" alt="Sérum Revitalizante" class="product-image default-img">
+                        <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&q=80&w=400" alt="Sérum Revitalizante" class="product-image hover-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="#" class="product-category">Skincare</a>
+                        <h3 class="product-name"><a href="#">Sérum Revitalizante Glow</a></h3>
+                        <div class="product-price">
+                            <span class="old-price">R$ 129,90</span>
+                            <span class="current-price">R$ 110,40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&q=80&w=400" alt="Base Líquida HD" class="product-image default-img">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a1c8bc26e95c?auto=format&fit=crop&q=80&w=400" alt="Base Líquida HD" class="product-image hover-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="#" class="product-category">Maquiagem</a>
+                        <h3 class="product-name"><a href="#">Base Líquida HD Perfect</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">R$ 89,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="product-badge new">Novo</span>
+                        <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&q=80&w=400" alt="Paleta de Sombras" class="product-image default-img">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a1c8bc26e95c?auto=format&fit=crop&q=80&w=400" alt="Paleta de Sombras" class="product-image hover-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="#" class="product-category">Maquiagem</a>
+                        <h3 class="product-name"><a href="#">Paleta de Sombras Nude Essence</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">R$ 145,00</span>
+                        </div>
+                        <div class="product-installments">ou 3x de R$ 48,33</div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=400" alt="Batom Matte" class="product-image default-img">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&q=80&w=400" alt="Batom Matte" class="product-image hover-img">
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" aria-label="Adicionar ao carrinho">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="#" class="product-category">Lábios</a>
+                        <h3 class="product-name"><a href="#">Batom Líquido Matte Velvet</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">R$ 45,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-action" style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-outline">Ver todos os produtos</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding" style="background-color: var(--color-surface);">
+            <div class="container">
+                <h2 class="section-title">O que dizem nossas clientes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i>
+                        </div>
+                        <p class="testimonial-text">"Sempre compro nessa loja! Os produtos chegaram super bem embalados e muito rápido. A base é perfeita, cobriu tudo sem pesar."</p>
+                        <p class="testimonial-author">- Amanda S.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i>
+                        </div>
+                        <p class="testimonial-text">"Super indico a loja! O atendimento via WhatsApp foi maravilhoso, me ajudaram a escolher a minha cor certinha."</p>
+                        <p class="testimonial-author">- Beatriz L.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i>
+                        </div>
+                        <p class="testimonial-text">"Amei a qualidade dos pincéis, são muito macios. Voltarei a comprar com certeza!"</p>
+                        <p class="testimonial-author">- Camila M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instagram Feed Teaser -->
+        <section class="instagram-section section-padding container">
+            <h2 class="section-title">Siga <a href="https://www.instagram.com/kn_beauty08/" target="_blank">@kn_beauty08</a> no Instagram</h2>
+            <div class="insta-grid">
+                <a href="https://www.instagram.com/kn_beauty08/" target="_blank" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a1c8bc26e95c?auto=format&fit=crop&q=80&w=300&h=300" alt="Instagram Kn Beauty">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/kn_beauty08/" target="_blank" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=300&h=300" alt="Instagram Kn Beauty">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/kn_beauty08/" target="_blank" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&q=80&w=300&h=300" alt="Instagram Kn Beauty">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/kn_beauty08/" target="_blank" class="insta-item hidden-mobile">
+                    <img src="https://images.unsplash.com/photo-1615397323214-411a0da895a6?auto=format&fit=crop&q=80&w=300&h=300" alt="Instagram Kn Beauty">
+                    <div class="insta-overlay"><i data-lucide="instagram"></i></div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo footer-logo">Kn Beauty.</a>
+                    <p class="footer-desc">Realçando a sua beleza natural com produtos premium. Uma loja pensada para você.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kn_beauty08/" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-2"><circle cx="8" cy="18" r="4"/><path d="M12 18V2l7 4"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Nossas Lojas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Prazos e Entregas</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    <p>Cadastre-se para receber novidades e 10% OFF na sua primeira compra.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Assinar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container container-flex">
+                <p>&copy; 2026 Kn Beauty. Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i data-lucide="credit-card"></i>
+                    <i data-lucide="banknote"></i>
+                    <!-- Add more payment icons if needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5585999999999" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"/><path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"/><path d="M9.5 13.5c.5 1 1.5 1 2.5 1s2-.5 2.5-1"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
