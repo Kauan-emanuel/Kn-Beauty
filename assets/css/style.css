@@ -48,6 +48,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -56,6 +58,8 @@ body {
     background-color: var(--color-background);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -105,7 +109,7 @@ button {
 }
 
 .hidden-mobile {
-    display: none;
+    display: none !important;
 }
 
 /* Typography Classes */
@@ -962,7 +966,7 @@ h1, h2, h3, h4, h5, h6, .logo {
 /* Tablet Layout (768px - 1023px) */
 @media (min-width: 768px) {
     .hidden-mobile {
-        display: flex;
+        display: flex !important;
     }
     
     .mobile-menu-btn {
