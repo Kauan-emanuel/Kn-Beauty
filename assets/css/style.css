@@ -5,17 +5,17 @@
 /* Variables */
 :root {
     /* Colors */
-    --color-primary: #86868B; /* Silver/Grey */
-    --color-primary-dark: #6E6E73;
-    --color-secondary: #F5F5F7; 
-    --color-text: #1D1D1F; /* Almost black */
-    --color-text-light: #515154;
-    --color-background: #FFFFFF;
-    --color-surface: #FBFBFD;
-    --color-border: #E5E5EA;
+    --color-primary: #8D424F; /* Dark Mauve */
+    --color-primary-dark: #6C303A;
+    --color-secondary: #CE808B; /* Dusty Rose */
+    --color-text: #411E24; /* Very Dark Mauve */
+    --color-text-light: #AD616C; /* Muted Mauve */
+    --color-background: #FFFCFC;
+    --color-surface: #FAF0F0; /* Pale variant */
+    --color-border: #EDD1CC; /* Pale Pink/Beige */
     --color-error: #D9534F;
     --color-success: #5CB85C;
-    --color-sale: #E07A5F;
+    --color-sale: #E39CA9; /* Pinkish Rose */
     
     /* Typography */
     --font-heading: 'Playfair Display', serif;
