@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6, .logo {
     color: var(--color-text);
 }
 
-.logo i, .logo svg {
+.logo i, .logo svg, .action-btn .lucide-star {
     width: 22px;
     height: 22px;
     color: var(--color-primary);
@@ -208,10 +208,14 @@ h1, h2, h3, h4, h5, h6, .logo {
     display: block;
 }
 
-.mobile-menu-btn {
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+.logo .lucide-heart, .logo i[data-lucide="heart"] {
+    width: 22px;
+    height: 22px;
+}
+
+.action-btn:hover .lucide-star {
+    transform: scale(1.1);
+    transition: transform var(--transition-fast);
 }
 
 .header-actions {
